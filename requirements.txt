@@ -1,3 +1,7 @@
+pandas
+imutils
+argparse
+numpy
 streamlit
 opencv-python
 opencv-contrib-python

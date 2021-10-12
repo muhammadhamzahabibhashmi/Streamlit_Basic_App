@@ -18,14 +18,14 @@ def wbs(img):
     result = cv2.cvtColor(result, cv2.COLOR_LAB2BGR)
     return result
 
-def main(vidddddddddddddd):
+def main():
     t1 ,t2 ,t3,t4 = 30,0,40,0
     vibbb,vibbb1,vibbb2,vibbb3 = 0,0,0,0
     # stframe1 , charr1 = st.beta_columns(2)
     stframe = st.empty()
     charr = st.empty()
     
-    vs = cv2.VideoCapture(vidddddddddddddd)
+    vs = cv2.VideoCapture(0)
     firstFrame = None
     while True:
         ret ,frame = vs.read()
@@ -93,4 +93,4 @@ st.sidebar.info("Press Run for Live Streaming")
 wc = st.sidebar.button("Run")
 
 if (wc):
-    main(0)
+    main()
